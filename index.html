@@ -3,51 +3,85 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="styling.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
         <title>MeesIT</title>
     </head>
     <body>
 
         <nav>
-            <div class="logo"></div>
+            <h3 class="logo">MeesIT</h3>
 
-            <a href="">Experience</a>
-            <a href="">Contact</a>
+            <a href="pages/experience.html">Experience</a>
+            <a href="pages/contact.html">Contact</a>
         </nav>
 
-        <h1>Hi, I'm Mees</h1>
-        <div class="img-gallery"></div>
-        <h2>How can I help you?</h2>
-        <p>
-            Though I'm always eager to explore new opportunities in the tech world, 
-            my particular skill set centers around creating customized websites for small business owners.
-        </p>
+        <main>
+            <h1>Hi, I'm Mees</h1>
+            <div class="img-gallery">
+                <img class="img1" src="images/hug.jpg" alt="">
+    
+                <img class="img2" src="images/surfing.jpg" alt="">
+    
+                <img class="img3" src="images/marathon-madeira.jpg" alt="">
+    
+                <img class="img4" src="images/in-paris.jpg" alt="">
+    
+                <img class="img5" src="images/madeira-bay.jpg" alt="">
+            </div>
 
-        <div class="call-to-action">
-            <h3 class="call-to-action__text--thin">Need a developer?</h3>
-            <h2 class="call-to-action__text--bold">Let's work together</h2>
-            <i class="arrow"></i>
-        </div>
+            <div class="more-info">
+                <h2>How can I help you?</h2>
+                <p>
+                    Though I'm always eager to explore new opportunities in the tech world, 
+                    my particular skill set centers around <span class="underline">creating customized websites for small business owners</span>.</p>
+            </div>
+    
+    
+            <div class="call-to-action">
+                <h3 class="call-to-action__text--thin">Need a developer?</h3>
+                <div class="call-to-action__container">
+                    <h2 class="call-to-action__text--bold">Let's work together</h2>
+                    <svg width="99" height="91" viewBox="0 0 99 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M46.6125 73.1791C45.8563 72.484 45.4603 71.5993 45.4245 70.5249C45.3915 69.4506 45.7531 68.5659 46.5094 67.8708L66.7219 49.2916H20.625C19.4562 49.2916 18.4759 48.9276 17.6839 48.1996C16.8946 47.4741 16.5 46.5743 16.5 45.4999C16.5 44.4256 16.8946 43.5245 17.6839 42.7965C18.4759 42.071 19.4562 41.7083 20.625 41.7083H66.7219L46.5094 23.1291C45.7531 22.434 45.3915 21.5493 45.4245 20.475C45.4603 19.4006 45.8563 18.5159 46.6125 17.8208C47.3688 17.1256 48.3312 16.7781 49.5 16.7781C50.6688 16.7781 51.6312 17.1256 52.3875 17.8208L79.6125 42.8458C80.025 43.1618 80.3179 43.5561 80.4911 44.0288C80.6616 44.504 80.7469 44.9944 80.7469 45.4999C80.7469 46.0055 80.6616 46.4795 80.4911 46.9218C80.3179 47.3642 80.025 47.7749 79.6125 48.1541L52.3875 73.1791C51.6312 73.8743 50.6688 74.2218 49.5 74.2218C48.3312 74.2218 47.3688 73.8743 46.6125 73.1791Z" fill="white"/>
+                    </svg>  
+                </div>                
+            </div>    
+        </main>
 
         <footer>
-            <h3>Contact information</h3>
-            <p>
-                If you have any questions or are interested in collaborating, 
-                feel free to reach out to me via email. I'm always open to new opportunities.
-            </p>
-            <span>meesmoons@gmail.com</span>
-
-            <h3>Connect</h3>
-            <a href="">Instagram</a>
-            <a href="">LinkedIn</a>
-            <a href="">GitHub</a>
-
-            <h3>Experience</h3>
-            <a href="">Freelance work</a>
-            <a href="">6 month internship</a>
-            <a href="">College</a>
-
-            <h3>MeesIT</h3>
-            <p>Made with </p> <i></i> <p> in the Netherlands</p>
+            <div class="contact-information">
+                <h3>Contact information</h3>
+                <p>
+                    If you have any questions or are interested in collaborating, 
+                    feel free to reach out to me via email. I'm always open to new opportunities.
+                </p>
+                <p>meesmoons@gmail.com</p>    
+            </div>
+            <div class="connect">
+                <h3>Connect</h3>
+                <a href="https://www.instagram.com/meesmoons/">Instagram</a>
+                <a href="https://www.linkedin.com/in/mees-moons-6a1040218/">LinkedIn</a>
+                <a href="https://github.com/MeesMoons">GitHub</a>    
+            </div>
+            <div class="experience">            
+                <h3>Experience</h3>
+                <a href="">Freelance work</a>
+                <a href="">6 month internship</a>
+                <a href="">College</a>
+            </div>
+            <div class="end-note">
+                <h3>MeesIT</h3>
+                <div class="end-note__container">
+                    <p>Made with </p>
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 22.0021L8.55 20.6821C3.4 16.0121 0 12.9221 0 9.1521C0 6.0621 2.42 3.6521 5.5 3.6521C7.24 3.6521 8.91 4.4621 10 5.7321C11.09 4.4621 12.76 3.6521 14.5 3.6521C17.58 3.6521 20 6.0621 20 9.1521C20 12.9221 16.6 16.0121 11.45 20.6821L10 22.0021Z" fill="white"/>
+                        </svg>
+                        
+                    <p> in the Netherlands</p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
