@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #222222;
+    --secondary-color: white;
+
+    --standard-font: 'Roboto', sans-serif;
+
+    --h1-font-size: 96px;
+    --h2-font-size: 64px;
+    --h3-font-size: 36px;
+    --p-font-size: 32px;
+
+    --h1-font-size--mobile: 40px;
+    --h2-font-size--mobile: 36px;
+    --h3-font-size--mobile: 24px;
+    --p-font-size--mobile: 16px;
+
+    --font-weight--thin: 300;
+    --font-weight--regular: 400;
+    --font-weight--bold: 800;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+/* NAVBAR */
+nav {
+    display: grid;
+    grid-template-columns: auto max-content max-content;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    place-self: center;
+}
+
+nav > a {
+    margin: 36px;
+    place-self: center;
+    font-size: var(--h3-font-size--mobile);
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.left {
+    background-color: var(--secondary-color);
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+.left > h2 {
+    color: var(--secondary-color);
+    place-self: center;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
+    position: absolute;
+}
+
+.right {
+    background-color: var(--primary-color);
+    display: grid;
+    justify-content: center;
+    width: 70%;
+    place-self: center;
+}
+
+.logo {
+    color: var(--secondary-color);
+}
+
+.contact-information > p, .end-note__container > p {
+    font-size: var(--h3-font-size--mobile);
+}
+
+.connect > a, .experience > a {
+    font-size: var(--h3-font-size--mobile);
+}
+
+.connect {
+    display: grid;
+    grid-template-columns: auto;
+    place-self: start;
+}
+
+p, a {
+    font-weight: var(--font-weight--thin);
+}
+
+main > img {
+    grid-area: 1 / 1 / 2 / 2;
+    object-fit: cover;
+    width: 800px;
+    object-fit: cover;
+    height: 100vh;
+}
