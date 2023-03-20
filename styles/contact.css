@@ -90,7 +90,7 @@ nav > a {
 .left > .overlay {
     grid-area: 1 / 1 / 2 / 2;
     background: black;
-    opacity: .5;
+    opacity: .4;
     z-index: 1;
 }
 
