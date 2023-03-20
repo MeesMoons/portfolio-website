@@ -9,7 +9,7 @@
     --h1-font-size: 96px;
     --h2-font-size: 64px;
     --h3-font-size: 36px;
-    --p-font-size: 32px;
+    --p-font-size: 24px;
 
     --h1-font-size--mobile: 40px;
     --h2-font-size--mobile: 36px;
@@ -301,7 +301,7 @@ footer {
 }
 
 .contact-information > p, .contact-information > a, .end-note__container > p {
-    font-size: var(--h3-font-size--mobile);
+    font-size: var(--p-font-size);
     font-weight: var(--font-weight--regular);
 }
 
