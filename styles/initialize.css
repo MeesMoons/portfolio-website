@@ -1,0 +1,63 @@
+/* INITIALIZE */
+:root {
+    --primary-color: #222222;
+    --secondary-color: white;
+
+    --standard-font: 'Roboto', sans-serif;
+
+    --h1-font-size: 96px;
+    --h2-font-size: 64px;
+    --h3-font-size: 36px;
+    --p-font-size: 32px;
+
+    --h1-font-size--mobile: 40px;
+    --h2-font-size--mobile: 36px;
+    --h3-font-size--mobile: 24px;
+    --p-font-size--mobile: 16px;
+
+    --font-weight--thin: 300;
+    --font-weight--regular: 400;
+    --font-weight--bold: 800;
+}
+
+body {
+    display: grid;
+    background-color: var(--primary-color);
+}
+
+main {
+    place-self: center;
+    display: grid;
+    width: 1020px;
+}
+
+h1, h2, h3, p, a {
+    font-family: var(--standard-font);
+    letter-spacing: 0.005em;
+    color: var(--secondary-color);
+}
+
+h1, h2, h3, a {
+    font-weight: var(--font-weight--bold);
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+p {
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight--regular);
+}
+
+.underline {
+    text-decoration: underline;
+}

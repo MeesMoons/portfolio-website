@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #222222;
+    --secondary-color: white;
+
+    --standard-font: 'Roboto', sans-serif;
+
+    --h1-font-size: 96px;
+    --h2-font-size: 64px;
+    --h3-font-size: 36px;
+    --p-font-size: 24px;
+
+    --h1-font-size--mobile: 40px;
+    --h2-font-size--mobile: 36px;
+    --h3-font-size--mobile: 24px;
+    --p-font-size--mobile: 16px;
+
+    --font-weight--thin: 300;
+    --font-weight--regular: 400;
+    --font-weight--bold: 800;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+h1, h2, h3, p, a {
+    font-family: var(--standard-font);
+    letter-spacing: 0.005em;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0;
+}
+
+p, a {
+    font-size: var(--p-font-size);
+}
+
+/* NAVBAR */
+nav {
+    display: grid;
+    grid-template-columns: auto max-content max-content;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    place-self: center;
+    z-index: 2;
+}
+
+nav > a {
+    margin: 36px;
+    place-self: center;
+    font-size: var(--h3-font-size--mobile);
+}
+
+.logo_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 0;
+}
+
+.left {
+    display: grid;
+    width: 100%;
+}
+
+.left > .overlay {
+    grid-area: 1 / 1 / 2 / 2;
+    background: black;
+    opacity: .4;
+    z-index: 1;
+}
+
+.left > h2 {
+    grid-area: 1 / 1 / 2 / 2;
+    place-self: center;
+    z-index: 2;
+    width: 80%;
+}
+
+.left > img {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.right {
+    padding-left: 100px;
+    padding-right: 100px;
+    background: var(--primary-color);
+    align-items: center;
+    display: grid;
+    align-content: center;
+    overflow: hidden;
+}
+
+.connect {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: auto;
+    }
+
+    .left > img {
+        height: 70vh;
+    }
+
+    h2 {
+        font-size: var(--h2-font-size--mobile);
+    }
+
+    h3 {
+        font-size: var(--h3-font-size--mobile);
+    }
+
+    p, a {
+        font-size: var(--p-font-size--mobile);
+    }
+
+    .right {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
