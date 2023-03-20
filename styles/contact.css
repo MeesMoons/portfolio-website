@@ -70,6 +70,7 @@ nav > a {
     display: grid;
     justify-content: center;
     align-items: center;
+    place-self: center start;
 }
 
 .logo {
