@@ -137,14 +137,20 @@ main > h1 {
 
 .img3 {
     width: 340px;
+    height: 425px;
+    object-fit: cover;
 }
 
 .img4 {
     width: 300px;
+    height: 425px;
+    object-fit: cover;
 }
 
 .img5 {
     width: 330px;
+    height: 425px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1020px) {
@@ -157,6 +163,7 @@ main > h1 {
     .img1 {
         width: 250px;
         height: 326px;
+        object-fit: cover;
     }
     
     .img2 {
@@ -165,14 +172,20 @@ main > h1 {
 
     .img3 {
         width: 250px;
+        height: 310px;
+        object-fit: cover;
     }
     
     .img4 {
         width: 230px;
+        height: 310px;
+        object-fit: cover;
     }
     
     .img5 {
         width: 240px;
+        height: 310px;
+        object-fit: cover;
     }
 }
 
@@ -182,24 +195,33 @@ main > h1 {
     }
 
     .img1 {
-        width: 110px;
-        height: 146px;
+        width: 250px;
+        height: 266px;
+        object-fit: cover;
     }
     
     .img2 {
-        width: 220px;
+        width: 400px;
+        height: 266px;
+        object-fit: cover;
     }
 
     .img3 {
-        width: 110px;
+        width: 250px;
+        height: 266px;
+        object-fit: cover;
     }
     
     .img4 {
-        width: 100px;
+        width: 200px;
+        height: 266px;
+        object-fit: cover;
     }
     
     .img5 {
-        width: 105px;
+        width: 200px;
+        height: 266px;
+        object-fit: cover;
     }
 
 }
@@ -240,6 +262,16 @@ main > h1 {
 @media screen and (max-width: 800px) {
     .call-to-action__text--bold {
         font-size: var(--h3-font-size);
+    }
+
+    .call-to-action__text--thin {
+        font-size: var(--h3-font-size--mobile);
+        margin-bottom: 0;
+    }
+
+    .call-to-action__container > svg {
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -299,6 +331,7 @@ footer {
 .end-note__container > p {
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1020px) {
@@ -322,7 +355,7 @@ footer {
 
 @media screen and (max-width: 800px) {
     footer {
-        width: 350px;
+        width: 700px;
     }
 
     .end-note__container {
