@@ -1,0 +1,224 @@
+/* INITIALIZING VARIABLES */
+:root {
+    --primary-color: #222222;
+    --secondary-color: white;
+
+    --standard-font: 'Roboto', sans-serif;
+
+    --h1-font-size: 96px;
+    --h2-font-size: 64px;
+    --h3-font-size: 36px;
+    --p-font-size: 24px;
+
+    --h1-font-size--mobile: 40px;
+    --h2-font-size--mobile: 36px;
+    --h3-font-size--mobile: 24px;
+    --p-font-size--mobile: 16px;
+
+    --font-weight--thin: 300;
+    --font-weight--regular: 400;
+    --font-weight--bold: 800;
+}
+
+body {
+    display: grid;
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+main {
+    place-self: center;
+    display: grid;
+    width: 1020px;
+}
+
+h1, h2, h3, p, a {
+    font-family: var(--standard-font);
+    letter-spacing: 0.005em;
+    color: var(--secondary-color);
+}
+
+h1, h2, h3, a {
+    font-weight: var(--font-weight--bold);
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    place-self: center;
+    padding-top: 100px;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+p {
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight--regular);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* NAVBAR */
+nav {
+    display: grid;
+    grid-template-columns: auto max-content max-content;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    place-self: center;
+    z-index: 2;
+}
+
+nav > a {
+    margin: 36px;
+    place-self: center;
+    font-size: var(--h3-font-size--mobile);
+    font-weight: var(--font-weight--regular);
+}
+
+.logo_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    place-self: center start;
+}
+
+.logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: var(--h3-font-size);
+    text-decoration: none;
+}
+
+.header {
+    display: grid;
+}
+
+.header > h1 {
+    grid-area: 1/1/2/2;
+    place-self: center;
+    z-index: 2;
+    width: 80%;
+}
+
+.header > .overlay {
+    grid-area: 1 / 1 / 2 / 2;
+    background: black;
+    opacity: .4;
+    z-index: 1;
+}
+
+.header > img {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    object-fit: cover;
+    height: 50vh;
+}
+/* MAIN */
+.UMC-container__outer {
+    display: grid;
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.UMC-container {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: repeat(8, auto);
+    background-color: var(--secondary-color);
+    column-gap: 25px;
+    place-self: center;
+}
+
+.UMC-container > img {
+    width: 210px;
+}
+
+.UMC-container__img1 {
+    grid-area: 1 / 1 / 6 / 2;
+}
+
+.UMC-container__img2 {
+    grid-area: 2 / 2 / 7 / 3;
+}
+
+.UMC-container__img3 {
+    grid-area: 3 / 3 / -1 / 4;
+}
+
+.UMC-container__text-container {
+    grid-area: 7 / 1 / -1 / -2;
+}
+
+.UMC-container__text-container  > h3, .UMC-container__link-container > a {
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.call-to-action {
+    place-self: center;
+    display: grid;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.call-to-action__text--thin {
+    font-size: 48px;
+    font-weight: var(--font-weight--thin);
+    margin-bottom: 24px;
+}
+
+.call-to-action__container {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+}
+
+.call-to-action__text--bold {
+    font-size: 80px;
+    font-weight: var(--font-weight--bold);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.IGH-container__outer {
+    display: grid;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.IGH-container {
+    place-self: center;
+}
+
+.IGH-container__text > h3, .IGH-container__text > p, .IGH-container__link-container > a {
+    color: var(--primary-color);
+}
+
+.IGH-container__logos {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    align-items: center;
+    gap: 50px;
+}
+
+.ss-logo {
+    object-fit: cover;
+    width: 150px;
+}
+
+.igh-logo {
+    width: 185px;
+    object-fit: cover;
+}
