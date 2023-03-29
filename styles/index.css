@@ -12,10 +12,10 @@
     --h3-font-size: 36px;
     --p-font-size: 24px;
 
-    --h1-font-size--mobile: 40px;
-    --h2-font-size--mobile: 36px;
-    --h3-font-size--mobile: 24px;
-    --p-font-size--mobile: 16px;
+    --h1-font-size--mobile: 70px;
+    --h2-font-size--mobile: 50px;
+    --h3-font-size--mobile: 35px;
+    --p-font-size--mobile: 24px;
 
     --font-weight--thin: 300;
     --font-weight--regular: 400;
@@ -110,7 +110,7 @@ nav {
 nav > a {
     margin: 36px;
     place-self: center;
-    font-size: var(--h3-font-size--mobile);
+    font-size: var(--p-font-size);
     font-weight: var(--font-weight--regular);
 }
 
@@ -440,7 +440,7 @@ footer {
 }
 
 .connect > a, .experience > a {
-    font-size: var(--h3-font-size--mobile);
+    font-size: var(--p-font-size);
     font-weight: var(--font-weight--regular);
 }
 
