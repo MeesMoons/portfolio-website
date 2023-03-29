@@ -3,6 +3,7 @@
 :root {
     --primary-color: #222222;
     --secondary-color: white;
+    --highlight-color: #9493ff;
 
     --standard-font: 'Roboto', sans-serif;
 
@@ -173,10 +174,12 @@ nav > a {
     text-decoration: none;
     font-weight: var(--font-weight--bold);
     font-size: var(--p-font-size);
+    transition-duration: 350ms;
 }
 
 .hero > .text > a:hover {
-    background-color: rgb(148, 148, 148);
+    background-color: var(--highlight-color);
+    color: white;
 }
 
 
@@ -306,6 +309,13 @@ main > h1 {
 
 .call-to-action__container > a {
     text-decoration: none;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.call-to-action__container:hover > a {
+    border-bottom: solid 5px var(--highlight-color);
+    margin-bottom: 0;
 }
 
 .call-to-action__text--bold {
