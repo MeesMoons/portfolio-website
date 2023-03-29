@@ -278,13 +278,53 @@ main > h1 {
 .more-info > .experience > .link {
     display: grid;
     grid-template-columns: max-content max-content;
+    width: max-content;
     align-items: center;
-}
+    position: relative;
+    color: var(--highlight-color);
+  }
+
+.more-info > .experience > .link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--highlight-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .more-info > .experience > .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 .more-info > .experience > .link > svg {
     height: 30px;
     width: 30px;
+    animation: moreinfoArrow 3s linear infinite;
 }
+
+@keyframes moreinfoArrow{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    10% {
+        transform: translate3d(+4px, 0, 0);
+    }
+    20% {
+        transform: translate3d(0px, 0, 0);
+    }
+    30% {
+        transform: translate3d(+4px, 0, 0);
+    }
+    40%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
 
 
 .call-to-action {
@@ -307,16 +347,41 @@ main > h1 {
     align-items: center;
 }
 
+.call-to-action__container > svg {
+    animation: ctaArrow  3s linear infinite;
+}
+
 .call-to-action__container > a {
     text-decoration: none;
     padding-bottom: 5px;
     margin-bottom: 5px;
 }
 
-.call-to-action__container:hover > a {
-    border-bottom: solid 5px var(--highlight-color);
-    margin-bottom: 0;
-}
+.call-to-action__container {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    position: relative;
+    color: var(--highlight-color);
+  }
+
+.call-to-action__container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--highlight-color);
+    transform-origin: bottom right;
+    transition: transform 0.50s ease-out;
+  }
+  
+  .call-to-action__container:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 .call-to-action__text--bold {
     font-size: 80px;
@@ -341,6 +406,23 @@ main > h1 {
     }
 }
 
+@keyframes ctaArrow{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    10% {
+        transform: translate3d(+10px, 0, 0);
+    }
+    20% {
+        transform: translate3d(0px, 0, 0);
+    }
+    30% {
+        transform: translate3d(+10px, 0, 0);
+    }
+    40%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
 
 /* FOOTER */
 footer {
