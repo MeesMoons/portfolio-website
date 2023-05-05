@@ -1,6 +1,7 @@
 :root {
     --primary-color: #222222;
     --secondary-color: white;
+    --highlight-color: #9493ff;
 
     --standard-font: 'Roboto', sans-serif;
 
@@ -9,10 +10,10 @@
     --h3-font-size: 36px;
     --p-font-size: 24px;
 
-    --h1-font-size--mobile: 40px;
-    --h2-font-size--mobile: 36px;
-    --h3-font-size--mobile: 24px;
-    --p-font-size--mobile: 16px;
+    --h1-font-size--mobile: 70px;
+    --h2-font-size--mobile: 50px;
+    --h3-font-size--mobile: 35px;
+    --p-font-size--mobile: 24px;
 
     --font-weight--thin: 300;
     --font-weight--regular: 400;
@@ -23,6 +24,7 @@ body {
     margin: 0;
     height: 100vh;
     display: grid;
+    background-color: var(--primary-color);
 }
 
 main {
@@ -58,6 +60,7 @@ nav {
     width: 80%;
     place-self: center;
     z-index: 2;
+    background-color: var(--primary-color);
 }
 
 nav > a {
@@ -144,8 +147,23 @@ nav > a {
         font-size: var(--p-font-size--mobile);
     }
 
+    nav {
+        width: 90%;
+    }
+
+    nav > a {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
     .right {
         padding-top: 100px;
         padding-bottom: 100px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
