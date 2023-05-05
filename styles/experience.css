@@ -46,7 +46,6 @@ h1, h2, h3, a {
 h1 {
     font-size: var(--h1-font-size);
     place-self: center;
-    padding-top: 100px;
 }
 
 h2 {
@@ -73,19 +72,15 @@ p {
 nav {
     display: grid;
     grid-template-columns: auto max-content max-content;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 80%;
     place-self: center;
     z-index: 3;
+    padding-top: 30px;
 }
 
-nav > a {
-    margin: 36px;
-    place-self: center;
-    font-size: var(--p-font-size);
-    font-weight: var(--font-weight--regular);
-}
+
 
 .logo_container {
     display: grid;
@@ -93,13 +88,44 @@ nav > a {
     align-items: center;
     place-self: center start;
 }
+@media screen and (max-width: 800px) {
 
-.logo {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: var(--h3-font-size);
-    text-decoration: none;
+    nav > a {
+        margin: 36px;
+        place-self: center;
+        font-size: var(--h3-font-size--mobile);
+        font-weight: var(--h3-font-size--mobile);
+    }
+
+    .logo {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: var(--h2-font-size);
+        text-decoration: none;
+    }
+
+    .UMC-container__example {
+        padding-left: 20px;
+    }
 }
+
+@media screen and (min-width: 800px) {
+    nav > a {
+        margin: 36px;
+        place-self: center;
+        font-size: var(--p-font-size);
+        font-weight: var(--font-weight--regular);
+    }
+
+    .logo {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: var(--h3-font-size);
+        text-decoration: none;
+    }
+}
+
+
 
 .header {
     display: grid;
@@ -110,6 +136,8 @@ nav > a {
     width: 80%;
     background-color: var(--primary-color);
 }
+
+
 
 /* MAIN */
 .UMC-container {

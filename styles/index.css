@@ -100,7 +100,7 @@ p {
 nav {
     display: grid;
     grid-template-columns: auto max-content max-content;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 80%;
     place-self: center;
