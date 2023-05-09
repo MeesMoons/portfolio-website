@@ -63,18 +63,44 @@ nav {
     background-color: var(--primary-color);
 }
 
-nav > a {
-    margin: 36px;
-    place-self: center;
-    font-size: var(--h3-font-size--mobile);
-    font-weight: var(--font-weight--regular);
+@media screen and (max-width: 800px) {
+
+    nav > a {
+        margin: 36px;
+        place-self: center;
+        font-size: var(--h3-font-size--mobile);
+        font-weight: var(--h3-font-size--mobile);
+    }
+
+    .logo_container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        place-self: center start;
+    }
+
+    .logo {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: var(--h2-font-size);
+        text-decoration: none;
+    }
 }
 
-.logo_container {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    place-self: center start;
+@media screen and (min-width: 800px) {
+    nav > a {
+        margin: 36px;
+        place-self: center;
+        font-size: var(--p-font-size);
+        font-weight: var(--font-weight--regular);
+    }
+
+    .logo_container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        place-self: center start;
+    }
 }
 
 .logo {
