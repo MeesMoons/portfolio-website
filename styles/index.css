@@ -78,22 +78,6 @@ p {
     main {
         width: 700px;
     }
-    
-    h1 {
-        font-size: var(--h1-font-size--mobile);
-    }
-    
-    h2 {
-        font-size: var(--h2-font-size--mobile);
-    }
-    
-    h3 {
-        font-size: var(--h3-font-size--mobile);
-    }
-    
-    p {
-        font-size: var(--p-font-size--mobile);
-    }
 }
 
 /* NAVBAR */
@@ -155,6 +139,7 @@ nav > a {
     z-index: 2;
     place-self: center;
     text-align: center;
+    margin-top: -100px;
 }
 
 .hero > .text > h3 {
@@ -483,6 +468,32 @@ footer > .connect > h3, footer > .experience > h3 {
 }
 
 @media screen and (max-width: 1020px) {
+
+    p {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 46px;
+    }
+
+    nav > a {
+        font-size: 36px;
+    }
+
+    .hero > .text > a {
+        font-size: 36px;
+    }
+
+    .more-info > .experience > .link > .thin {
+        font-size: 36px;
+    }
+
+    .more-info > .experience > .link > svg {
+        height: 40px;
+        width: 40px;
+    }
+
     footer {
         width: 760px;
         grid-template-columns: auto;

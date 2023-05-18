@@ -455,6 +455,48 @@ footer > .connect > h3, footer > .experience > h3 {
     .end-note__container {
         justify-content: start;
     }
+
+    .UMC-container {
+        grid-template-columns: auto;
+    }
+
+    .UMC-container__example {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .UMC-container__text-container > img {
+        width: 100%;
+    }
+
+    .IGH-container__logo-container {
+        grid-template-columns: auto;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .IGH-container__logo-container > img:nth-child(2) {
+        padding-left: 10px;
+    }
+
+    p {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 46px;
+    }
+
+    .UMC-container__link-container > .experience > .link > .thin, 
+    .IGH-container__link-container > .experience > .link > .thin {
+        font-size: 36px;
+    }
+
+    .UMC-container__link-container > .experience > .link > svg, 
+    .IGH-container__link-container > .experience > .link > svg {
+        height: 40px;
+        width: 40px;
+    }
 }
 
 @media screen and (max-width: 800px) {
